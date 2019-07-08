@@ -1,0 +1,257 @@
+/*===General styles===*/
+body {
+	font-family: 'Open Sans', sans-serif; 
+}
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+	color: grey;
+	line-height: 21px;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}	
+body {
+	background: whitesmoke;
+}
+#content {
+	background: antiquewhite;
+
+}
+
+/*===Navigation===*/
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+.name { 
+	font-size: 1.25em;
+	margin: 0;
+}
+.main-nav {
+	margin-top: 5px;
+	padding-top: 10px;
+}
+.name,
+.main-nav li { 
+	text-align: center;
+	display: block;
+	padding: 10px 0px;
+}
+.main-nav li {
+	font-size: 0.92em;
+	color: black;
+	text-transform: uppercase;
+	background: white;
+	margin: 3px;
+	width: 85%;
+	font-weight: bold;
+}
+.main-nav a:visited {
+	color: black;
+}
+.name a:visited {
+	color: black;
+}
+/*===layout===*/
+.banner {
+	margin-bottom: 30px;
+	text-align: center;
+}
+.banner p {
+	color: grey;
+}
+.banner img { 
+	width: 190px;
+}
+.col {
+	text-align: center;
+	height: 350px;
+}
+#content {
+	text-align: center;
+}
+/*===page elements===*/
+#contact {
+	text-align: center;
+	padding: 10px 20px;
+	border-bottom: solid lightgrey;
+	border-width: 0.5px;
+}
+#contact h4 {
+	text-transform: uppercase;
+}
+#content h2 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-size: .92em;
+}
+.main-footer {
+	padding-bottom: 60px;
+	padding-top: 15px;
+	border-top: solid gainsboro;
+	border-width: .5px;
+}
+footer .studentname {
+	float: left;
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size: .92em;
+	color: black;
+}
+footer .backtotop{
+	float: right;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: .92em;
+	color: black;
+}
+.footer-nav li {
+	display: none;
+}
+#contact p {
+	padding: 0 0;
+}
+.main-nav a:hover {
+	color: orange;
+}
+.footer-nav a:hover {
+	color: orange;
+}
+
+#skills {
+  display: inline-block;
+  width: 80%;
+}
+
+/*===media queries===*/
+@media (min-width: 768px) { /*Tablet*/
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}	
+	.main-nav {
+		text-align: center;
+	}
+	.main-nav li {
+		display: inline;
+		margin: 10px;
+		background: none;
+		text-align: center;
+		width: 100%;
+
+	}
+	.marketing, .travelapp, .photogallery, .travelapp {
+		float: left;
+		width: 40%;
+		padding-left: 60px;
+	}
+	.searchpage,
+	.favoritespots,
+	.calculator {
+		float: right;
+		width: 40%;
+		padding-right: 60px;
+	}
+	.clearfix::after { 
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	.banner img {
+		float: right;
+		width: 40%;
+		padding: 0 17px;
+	}
+	.tagline {
+		float: left;
+		width: 50%;
+		text-align: left;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.backtotop {
+		display: none;
+	}
+	.footer-nav li {
+		display: inline;
+		padding: 0 10px;
+	}
+	.footer-nav {
+		float: right;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: .92em;
+	}
+	#contact p {
+	padding-left: 150px;
+	padding-right: 150px;
+}
+	.footer-nav a:visited {
+	color: black;
+}
+	
+}
+@media (min-width: 1024px) { /*Desktop*/
+	/*Not Portfolio section*/
+	.name {
+		float: left;
+	}
+	.main-nav {
+		float: right;
+		font-size: .92em;
+		font-weight: bold;
+	}
+	.main-nav li {
+		display: inline;
+		margin: 10px;
+		background: none;
+		padding: 0;
+		width: 100%;
+	}
+	.banner img {
+		float: right;
+		width: 29%;
+		padding: 12px 54px 12px 0;
+	}
+	.tagline {
+		float: left;
+		width: 45%;
+		text-align: left;
+		padding: 0px 0px 0px 50px;
+	}
+	/*Portfolio section*/
+	.marketing,
+	.searchpage,
+	.favoritespots,
+	.photogallery {
+		float: left;
+		width: 25%;
+		padding-left: 65px;
+		padding-right: 0;
+	}
+	.travelapp,
+	.calculator {
+		float: right;
+		width: 25%;
+		padding-right: 60px;
+		padding-left: 0px;
+	}
+	.backtotop {
+		display: none;
+	}
+	#contact p {
+	color: grey;
+	padding-left: 250px;
+	padding-right: 250px;
+}
+
+
+
+
+
+}
