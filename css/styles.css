@@ -73,7 +73,7 @@ body {
 }
 .col {
 	text-align: center;
-	height: 350px;
+	max-height: auto;
 }
 #content {
 	text-align: center;
@@ -149,6 +149,9 @@ footer .backtotop{
 		width: 100%;
 
 	}
+	.col {
+		height: 350px;
+	}
 	.marketing, .travelapp, .photogallery, .travelapp {
 		float: left;
 		width: 40%;
@@ -194,10 +197,13 @@ footer .backtotop{
 	#contact p {
 	padding-left: 150px;
 	padding-right: 150px;
-}
+	}
 	.footer-nav a:visited {
 	color: black;
-}
+	}
+	.footer-nav a:hover {
+	color: orange;
+	}
 	
 }
 @media (min-width: 1024px) { /*Desktop*/
