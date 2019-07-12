@@ -48,7 +48,6 @@ img {
 .name { 
 	font-size: 1.25em;
 	margin: 0;
-
 }
 .main-nav {
 	margin-top: 5px;
@@ -166,7 +165,6 @@ footer .backtotop{
 		background: none;
 		text-align: center;
 		width: 100%;
-
 	}
 	.clearfix::after { 
 		content: " ";
@@ -211,7 +209,6 @@ footer .backtotop{
 	
 }
 @media (min-width: 1024px) { /*Desktop*/
-	/*Not Portfolio section*/
 	.col2 { 
 		width: calc(33.333% - 20px);
 	}
