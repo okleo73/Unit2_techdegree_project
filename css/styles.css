@@ -1,6 +1,27 @@
 /*===General styles===*/
+* { /*slack test*/
+	box-sizing: border-box;
+}
+body{ /*slack test*/
+	margin: 0;
+}
+#content { /*slack test*/
+	margin: 0 auto;
+	max-width: 1110px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.col2 { /*slack test*/
+	display: block;
+	margin: 20px 10px;
+	max-width: 100%;
+	text-align: center;
+	letter-spacing: 1px;
+	padding-top: 5px;
+}
 body {
 	font-family: 'Open Sans', sans-serif; 
+	background: whitesmoke;
 }
 p {
 	font-size: .95em;
@@ -14,12 +35,8 @@ a {
 img {
 	max-width: 100%;
 }	
-body {
-	background: whitesmoke;
-}
 #content {
 	background: antiquewhite;
-
 }
 
 /*===Navigation===*/
@@ -74,6 +91,9 @@ body {
 .col {
 	text-align: center;
 }
+/*.col img {
+	max-height: 173px;
+}*/
 #content {
 	text-align: center;
 }
@@ -87,12 +107,12 @@ body {
 #contact h4 {
 	text-transform: uppercase;
 }
-#content h2 {
+/*#content h2 {
   padding-top: 30px;
   padding-bottom: 20px;
   text-transform: uppercase;
   font-size: .92em;
-}
+}*/
 .main-footer {
 	padding-bottom: 60px;
 	padding-top: 15px;
@@ -129,10 +149,17 @@ footer .backtotop{
 #skills {
   display: inline-block;
   width: 80%;
+  padding-top: 25px;
 }
 
 /*===media queries===*/
 @media (min-width: 768px) { /*Tablet*/
+	.col2 { /*slack material*/
+		float: left;
+		width: calc(50% - 20px);
+		margin-bottom: 0;
+		height: 368px; 
+	}
 	.container {
 		width: 90%;
 		margin: 0 auto;
@@ -148,7 +175,7 @@ footer .backtotop{
 		width: 100%;
 
 	}
-	.col {
+	/*.col {
 		height: 350px;
 	}
 	.marketing, .travelapp, .photogallery, .travelapp {
@@ -162,7 +189,7 @@ footer .backtotop{
 		float: right;
 		width: 40%;
 		padding-right: 60px;
-	}
+	}*/
 	.clearfix::after { 
 		content: " ";
 		display: table;
@@ -194,19 +221,22 @@ footer .backtotop{
 		font-size: .92em;
 	}
 	#contact p {
-	padding-left: 150px;
-	padding-right: 150px;
+		padding-left: 150px; 
+		padding-right: 150px;
 	}
 	.footer-nav a:visited {
-	color: black;
+		color: black; 
 	}
 	.footer-nav a:hover {
-	color: orange;
+		color: orange;   
 	}
 	
 }
 @media (min-width: 1024px) { /*Desktop*/
 	/*Not Portfolio section*/
+	.col2 { /*slack*/
+		width: calc(33.333% - 20px);
+	}
 	.name {
 		float: left;
 	}
@@ -234,31 +264,36 @@ footer .backtotop{
 		padding: 0px 0px 0px 50px;
 	}
 	/*Portfolio section*/
-	.marketing,
+	/*.marketing,
 	.searchpage,
 	.favoritespots,
 	.photogallery {
 		float: left;
 		width: 25%;
-		padding-left: 65px;
+		padding-left: 60px;
 		padding-right: 0;
 	}
 	.travelapp,
 	.calculator {
-		float: right;
+		float: left;
 		width: 25%;
-		padding-right: 60px;
-		padding-left: 0px;
-	}
+		padding-left: 60px;
+	}*/
 	.backtotop {
 		display: none;
 	}
 	#contact p {
-	color: grey;
-	padding-left: 250px;
-	padding-right: 250px;
-}
-
+		color: grey;    
+		padding-left: 250px;
+		padding-right: 250px;
+	}
+	.footer-nav a:hover {
+		color: orange; 
+	}
+	/*.col {
+		text-align: center;
+	}
+*/
 
 
 
